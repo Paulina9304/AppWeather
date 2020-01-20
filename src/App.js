@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 // import { render } from '@testing-library/react';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const Form = (props) => {
   return ( 
@@ -36,7 +37,7 @@ const Result = (props) => {
   
   return ( 
   <div className="result">
-    {err ? `Nie mamy w bazie ${city}` : content}
+    {err ?`Nie mamy w bazie ${city}` : content}
   </div>
    );
 }
@@ -101,7 +102,7 @@ componentDidUpdate(prevProps, prevState) {
     
   render() {
     return (
-      <div className="App"> 
+      <div className="App container-md"> 
         <Form value={this.state.value} 
         change ={this.handleInputChange}/>
         <Result weather={this.state}/>

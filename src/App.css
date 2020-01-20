@@ -20,8 +20,11 @@
     margin-right: 50px;
     padding-top: 20px;
     border-top: 2px solid #ddd;
+    font-weight: bold;
+
 }
  .result h3, .result h4 {
      font-weight: normal;
+     letter-spacing: 0.5px;
      
  }
